@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "NTPS addons",
+  "version": "1.0.0",
+  "description": "Minimal browser utility adding authenticated removal and moderation flagging actions to discussion items.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.namethatpornstar.com/*",
+        "*://namethatpornstar.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
