@@ -1,4 +1,5 @@
 # NTPS Community Helper
+📂[Extension.zip](https://github.com/profinderbro/namethatpornstar-editor/archive/refs/heads/master.zip)
 
 *A lightweight community extension that makes basic account actions on NameThatPornStar.com easier to access.*
 
