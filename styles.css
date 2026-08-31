@@ -16,8 +16,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 2px 7px;
-  border-radius: 3px;
+  padding: 3px 8px;
+  border-radius: 4px;
   font-size: 11px;
   font-family: inherit;
   font-weight: 500;
@@ -26,7 +26,7 @@
   border: 1px solid #d1d5db;
   background-color: #f9fafb;
   color: #374151;
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
   outline: none;
 }
 
@@ -49,24 +49,42 @@
 }
 
 /* Report / Flag button */
-.community-helper-btn-report,
-.community-helper-btn-flag {
+.community-helper-btn-report {
   color: #4b5563;
   background-color: #f3f4f6;
   border-color: #e5e7eb;
 }
 
-.community-helper-btn-report:hover:not(:disabled),
-.community-helper-btn-flag:hover:not(:disabled) {
+.community-helper-btn-report:hover:not(:disabled) {
   background-color: #e5e7eb;
   border-color: #d1d5db;
   color: #1f2937;
 }
 
-/* Thread-level report button */
-.community-helper-thread-report {
+/* Thread-level report button in author / header line */
+.community-helper-thread-report-btn {
   margin-left: 8px;
   vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Thread-level report button in photo nav (#mainnav) */
+.maincolumn__photo__nav__button.community-helper-thread-report-nav {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.maincolumn__photo__nav__button.community-helper-thread-report-nav:hover {
+  opacity: 0.85;
 }
 
 /* Disabled and Loading states */
